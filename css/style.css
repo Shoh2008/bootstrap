@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: rgb(0, 0, 0);
+  color: chartreuse;
+  border-radius: 10px;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  color: white !important;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: greenyellow;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+.con{
+  position: absolute;
+}
+
+.block {
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header {
+  height: 80vh;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  z-index: 999;
+}
+
+.search {
+  width: 200px;
+}
+
+.icons {
+  z-index: 999;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon {
+  text-align: center;
+  border-radius: .25rem;
+  height: 120px;
+  width: 120px;
+  margin: 10px;
+  background-color: #2e2e2e;
+  padding-top: 20px !important;
+}
+
+.bi {
+  margin: .25rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.label {
+  margin-top: 5px;
+  font-family: var(--bs-font-monospace);
+  font-size: 13px !important;
+  color: white;
+}
+
+.label {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  padding: .25rem;
+  font-size: .625rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copyalert h1 {
+  font-size: 100px;
+  font-family: fantasy;
+}
+
+.canv {
+  position: fixed;
+  background-color: transparent !important;
+  margin-top: -10px;
+}
